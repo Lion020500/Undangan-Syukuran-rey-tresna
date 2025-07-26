@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Syukuran Pernikahan</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Bagian Header -->
+    <section class="header">
+      <h2>SYUKURAN PERNIKAHAN</h2>
+      <h1>Rey & Tresna</h1>
+      <div class="foto-couple">
+        <img src="assets/img/foto-couple.jpg" alt="Foto Rey & Tresna" />
+      </div>
+      <p class="deskripsi">
+        Dengan penuh syukur atas berkat Tuhan dalam pernikahan anak kami,
+        kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara
+        Syukuran Pernikahan.
+      </p>
+    </section>
+
+    <!-- Tanggal & Waktu -->
+    <section class="tanggal">
+      <div class="kotak-tanggal">
+        <span>SABTU</span>
+        <h2>2</h2>
+        <span>2025</span>
+      </div>
+      <div class="bulan">
+        <h3>AGUSTUS</h3>
+      </div>
+    </section>
+
+    <!-- Info Lokasi dan Tuan Rumah -->
+    <section class="info">
+      <p><span class="emoji">🕒</span> Pukul 18.00 WITA – Selesai</p>
+      <p><span class="emoji">📌</span> Rumah Mama Marce Selan - Ratu Kaja, Tungganamo</p>
+      <div class="hormat">
+        <p>Hormat kami,</p>
+        <p>Mama Marce Selan - Ratu Kaja</p>
+        <p>Bapak Sony Selan</p>
+        <p>Bapak Veky Robinson Selan</p>
+        <p>Bapak Patrick Selan</p>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp">
+      <h2>Konfirmasi Kehadiran</h2>
+      <form id="rsvp-form">
+        <input type="text" name="nama" placeholder="Nama Anda" required />
+        <select name="kehadiran" required>
+          <option value="">-- Pilih Kehadiran --</option>
+          <option value="Hadir">Hadir</option>
+          <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+        <button type="submit">Kirim</button>
+      </form>
+
+      <!-- Pesan berhasil -->
+      <p id="thanks" style="display:none; margin-top: 1em; color: green;">
+        Terima kasih, konfirmasi Anda telah terkirim 🙏
+      </p>
+    </section>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
