@@ -1,143 +1,208 @@
-/* Warna dasar dan font */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff9f5;
-  color: #4a3f35;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan Syukuran Rey & Tresna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Segoe+UI&display=swap" rel="stylesheet">
+  <style>
+    /* Warna dasar dan font */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff9f5;
+      color: #4a3f35;
+      line-height: 1.6;
+    }
 
-/* Kontainer tengah */
-.container {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 30px 20px;
-  background: #ffffffcc;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
-}
+    /* Kontainer tengah */
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 30px 20px;
+      background: #ffffffcc;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+    }
 
-/* Judul dan subjudul */
-h1, h2, h3 {
-  text-align: center;
-  font-family: 'Georgia', serif;
-  margin-bottom: 10px;
-}
+    /* Judul dan subjudul */
+    h1, h2, h3 {
+      text-align: center;
+      font-family: 'Georgia', serif;
+      margin-bottom: 10px;
+    }
 
-h1 {
-  font-size: 32px;
-  color: #8c5e3c;
-}
+    h1 {
+      font-size: 32px;
+      color: #8c5e3c;
+    }
 
-h2 {
-  font-size: 20px;
-  font-weight: normal;
-  color: #a8744e;
-}
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+      color: #a8744e;
+    }
 
-/* Foto couple di tengah, elegan */
-.foto-couple {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
+    /* Foto couple di tengah, elegan */
+    .foto-couple {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
 
-.foto-couple img {
-  width: 65%;
-  max-width: 400px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+    .foto-couple img {
+      width: 65%;
+      max-width: 400px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
 
-/* Tanggal & lokasi */
-.tanggal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
+    /* Tanggal & lokasi */
+    .tanggal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
 
-.kotak-tanggal {
-  background-color: #e8d4c0;
-  padding: 16px;
-  border-radius: 12px;
-  text-align: center;
-  margin-right: 20px;
-}
+    .kotak-tanggal {
+      background-color: #e8d4c0;
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+      margin-right: 20px;
+    }
 
-.kotak-tanggal h2 {
-  font-size: 40px;
-  margin: 0;
-  color: #8c5e3c;
-}
+    .kotak-tanggal h2 {
+      font-size: 40px;
+      margin: 0;
+      color: #8c5e3c;
+    }
 
-.kotak-tanggal span {
-  display: block;
-  font-size: 14px;
-}
+    .kotak-tanggal span {
+      display: block;
+      font-size: 14px;
+    }
 
-.bulan h3 {
-  font-size: 24px;
-  margin: 0;
-  color: #a8744e;
-}
+    .bulan h3 {
+      font-size: 24px;
+      margin: 0;
+      color: #a8744e;
+    }
 
-/* Info lokasi & keluarga */
-.info p {
-  text-align: center;
-  margin-bottom: 10px;
-}
+    /* Info lokasi & keluarga */
+    .info p {
+      text-align: center;
+      margin-bottom: 10px;
+    }
 
-.emoji {
-  font-size: 18px;
-  margin-right: 6px;
-}
+    .emoji {
+      font-size: 18px;
+      margin-right: 6px;
+    }
 
-.hormat {
-  margin-top: 20px;
-  text-align: center;
-}
+    .hormat {
+      margin-top: 20px;
+      text-align: center;
+    }
 
-.hormat p {
-  margin: 2px 0;
-}
+    .hormat p {
+      margin: 2px 0;
+    }
 
-/* Form RSVP */
-form {
-  margin-top: 30px;
-}
+    /* Form RSVP */
+    form {
+      margin-top: 30px;
+    }
 
-input, select, textarea, button {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  margin-top: 12px;
-  border: 1px solid #d6bda7;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: inherit;
-  background-color: #fffefc;
-}
+    input, select, textarea, button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      border: 1px solid #d6bda7;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: inherit;
+      background-color: #fffefc;
+    }
 
-button {
-  background-color: #c29a84;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
+    button {
+      background-color: #c29a84;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
 
-button:hover {
-  background-color: #a87f65;
-}
+    button:hover {
+      background-color: #a87f65;
+    }
 
-.thanks {
-  text-align: center;
-  color: green;
-  margin-top: 20px;
-  display: none;
-}
+    .thanks {
+      text-align: center;
+      color: green;
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Undangan Syukuran Pernikahan</h1>
+    <h2>Rey & Tresna</h2>
+
+    <div class="foto-couple">
+      <img src="https://i.imgur.com/UsfQwCl.jpg" alt="Foto Rey dan Tresna" />
+    </div>
+
+    <div class="tanggal">
+      <div class="kotak-tanggal">
+        <h2>10</h2>
+        <span>Agustus 2025</span>
+      </div>
+      <div class="bulan">
+        <h3>13.00 WITA - Selesai</h3>
+        <p><span class="emoji">📍</span>Gedung Serbaguna Bahagia, Kupang</p>
+      </div>
+    </div>
+
+    <div class="info">
+      <p>Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara syukuran pernikahan kami.</p>
+    </div>
+
+    <div class="hormat">
+      <p>Hormat kami,</p>
+      <p>Keluarga Besar Rey & Tresna</p>
+    </div>
+
+    <!-- Form RSVP -->
+    <form id="rsvp-form" onsubmit="event.preventDefault(); showThanks();">
+      <h2>Konfirmasi Kehadiran</h2>
+      <input type="text" name="nama" placeholder="Nama Anda" required />
+      <select name="kehadiran" required>
+        <option value="">-- Konfirmasi Kehadiran --</option>
+        <option value="Hadir">Hadir</option>
+        <option value="Tidak Hadir">Tidak Hadir</option>
+      </select>
+      <textarea name="ucapan" rows="4" placeholder="Ucapan & Doa (opsional)"></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+
+    <div class="thanks" id="thanks-message">
+      Terima kasih telah mengisi konfirmasi kehadiran! 💌
+    </div>
+  </div>
+
+  <script>
+    function showThanks() {
+      document.getElementById("rsvp-form").reset();
+      document.getElementById("thanks-message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
