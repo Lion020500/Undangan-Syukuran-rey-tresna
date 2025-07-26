@@ -1,208 +1,184 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Undangan Syukuran Rey & Tresna</title>
-  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Segoe+UI&display=swap" rel="stylesheet">
-  <style>
-    /* Warna dasar dan font */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff9f5;
-      color: #4a3f35;
-      line-height: 1.6;
-    }
+/* Global Styles */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f2f0;
+  color: #2c1f1a;
+  margin: 0;
+  padding: 1rem 2rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
 
-    /* Kontainer tengah */
-    .container {
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 30px 20px;
-      background: #ffffffcc;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      border-radius: 16px;
-    }
+/* Container for the invitation */
+.invitation-container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  padding: 2rem 1.5rem 3rem;
+  background-color: #f9f2f0;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(140, 95, 86, 0.2);
+}
 
-    /* Judul dan subjudul */
-    h1, h2, h3 {
-      text-align: center;
-      font-family: 'Georgia', serif;
-      margin-bottom: 10px;
-    }
+/* Floral decorations - handled with background images in the actual html if needed */
 
-    h1 {
-      font-size: 32px;
-      color: #8c5e3c;
-    }
+/* Header Text Styles */
+.invitation-header {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.3rem;
+}
 
-    h2 {
-      font-size: 20px;
-      font-weight: normal;
-      color: #a8744e;
-    }
+/* Main Couple Names */
+.couple-names {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0.1rem 0 1.5rem;
+  font-family: 'Times New Roman', serif;
+  color: #2c1f1a;
+}
 
-    /* Foto couple di tengah, elegan */
-    .foto-couple {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-    }
+/* Image Container */
+.couple-photo {
+  width: 360px;
+  height: 250px;
+  margin: auto;
+  border-radius: 50% / 40%;
+  overflow: hidden;
+  border: 2.5px solid #a78c73;
+  box-shadow: 0 6px 20px rgba(167, 140, 115, 0.35);
+  margin-bottom: 1.8rem;
+  background-color: #fff;
+  position: relative;
+}
 
-    .foto-couple img {
-      width: 65%;
-      max-width: 400px;
-      height: auto;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
+/* Image should be fully contained & cover */
+.couple-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
 
-    /* Tanggal & lokasi */
-    .tanggal {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0;
-    }
+/* Invitation Text */
+.invitation-text {
+  font-size: 1.12rem;
+  max-width: 450px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  color: #2c1f1a;
+  font-weight: 400;
+}
 
-    .kotak-tanggal {
-      background-color: #e8d4c0;
-      padding: 16px;
-      border-radius: 12px;
-      text-align: center;
-      margin-right: 20px;
-    }
+/* Date Container */
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-family: 'Georgia', serif;
+  margin-bottom: 1.2rem;
+  gap: 1rem;
+  color: #4c3b2b;
+}
 
-    .kotak-tanggal h2 {
-      font-size: 40px;
-      margin: 0;
-      color: #8c5e3c;
-    }
+/* Each Date Segment Styles */
+.date-segment {
+  flex: 1;
+  border-bottom: 1.5px solid #a78c73;
+  padding-bottom: 0.3rem;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  user-select: none;
+}
 
-    .kotak-tanggal span {
-      display: block;
-      font-size: 14px;
-    }
+/* Middle Number Larger */
+.date-number {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0 0.75rem;
+  margin-top: 0.2rem;
+  line-height: 1;
+  user-select: none;
+  color: #2c1f1a;
+}
 
-    .bulan h3 {
-      font-size: 24px;
-      margin: 0;
-      color: #a8744e;
-    }
+/* Month below number, centered below number and date segments */
+.month-label {
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  color: #4c3b2b;
+  margin-top: -0.8rem;
+  margin-bottom: 2rem;
+  user-select: none;
+}
 
-    /* Info lokasi & keluarga */
-    .info p {
-      text-align: center;
-      margin-bottom: 10px;
-    }
+/* Event Details */
+.event-details {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #2c1f1a;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+  user-select: none;
+}
 
-    .emoji {
-      font-size: 18px;
-      margin-right: 6px;
-    }
+/* Location line */
+.event-location {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: #4c3b2b;
+}
 
-    .hormat {
-      margin-top: 20px;
-      text-align: center;
-    }
+/* Host names */
+.host-names {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #45362e;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  user-select: none;
+}
 
-    .hormat p {
-      margin: 2px 0;
-    }
+/* Icons inline styling */
+.icon {
+  font-size: 1.1rem;
+  vertical-align: middle;
+  margin-right: 0.25rem;
+  opacity: 0.7;
+}
 
-    /* Form RSVP */
-    form {
-      margin-top: 30px;
-    }
+/* Responsive scaling for smaller devices */
+@media (max-width: 480px) {
+  .invitation-container {
+    padding: 1.5rem;
+  }
 
-    input, select, textarea, button {
-      display: block;
-      width: 100%;
-      padding: 12px;
-      margin-top: 12px;
-      border: 1px solid #d6bda7;
-      border-radius: 10px;
-      font-size: 16px;
-      font-family: inherit;
-      background-color: #fffefc;
-    }
+  .couple-photo {
+    width: 280px;
+    height: 190px;
+  }
 
-    button {
-      background-color: #c29a84;
-      color: white;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+  .couple-names {
+    font-size: 2rem;
+  }
 
-    button:hover {
-      background-color: #a87f65;
-    }
+  .date-number {
+    font-size: 2.5rem;
+  }
 
-    .thanks {
-      text-align: center;
-      color: green;
-      margin-top: 20px;
-      display: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Undangan Syukuran Pernikahan</h1>
-    <h2>Rey & Tresna</h2>
+  .month-label {
+    font-size: 1.2rem;
+  }
+}
 
-    <div class="foto-couple">
-      <img src="https://i.imgur.com/UsfQwCl.jpg" alt="Foto Rey dan Tresna" />
-    </div>
-
-    <div class="tanggal">
-      <div class="kotak-tanggal">
-        <h2>10</h2>
-        <span>Agustus 2025</span>
-      </div>
-      <div class="bulan">
-        <h3>13.00 WITA - Selesai</h3>
-        <p><span class="emoji">📍</span>Gedung Serbaguna Bahagia, Kupang</p>
-      </div>
-    </div>
-
-    <div class="info">
-      <p>Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara syukuran pernikahan kami.</p>
-    </div>
-
-    <div class="hormat">
-      <p>Hormat kami,</p>
-      <p>Keluarga Besar Rey & Tresna</p>
-    </div>
-
-    <!-- Form RSVP -->
-    <form id="rsvp-form" onsubmit="event.preventDefault(); showThanks();">
-      <h2>Konfirmasi Kehadiran</h2>
-      <input type="text" name="nama" placeholder="Nama Anda" required />
-      <select name="kehadiran" required>
-        <option value="">-- Konfirmasi Kehadiran --</option>
-        <option value="Hadir">Hadir</option>
-        <option value="Tidak Hadir">Tidak Hadir</option>
-      </select>
-      <textarea name="ucapan" rows="4" placeholder="Ucapan & Doa (opsional)"></textarea>
-      <button type="submit">Kirim</button>
-    </form>
-
-    <div class="thanks" id="thanks-message">
-      Terima kasih telah mengisi konfirmasi kehadiran! 💌
-    </div>
-  </div>
-
-  <script>
-    function showThanks() {
-      document.getElementById("rsvp-form").reset();
-      document.getElementById("thanks-message").style.display = "block";
-    }
-  </script>
-</body>
-</html>
